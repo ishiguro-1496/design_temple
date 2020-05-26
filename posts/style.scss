@@ -1,0 +1,261 @@
+
+
+// 色画像左から1-12
+$color_1:#e60012;
+$color_2:#f39800;
+$color_3:#fff100;
+$color_4:#8fc31f;
+$color_5:#009944;
+$color_6:#009e96;
+$color_7:#00a0e9;
+$color_8:#0068b7;
+$color_9:#1d2088;
+$color_10:#920783;
+$color_11:#e4007f;
+$color_12:#e5004f;
+
+
+#colors{
+	width:100%;
+	margin: 40px auto;
+}
+
+.design_block{
+	margin: 40px 0px;
+}
+
+.design_number{
+	font-size:24px;
+	margin: 12px;
+	font-weight: 400;
+}
+
+
+@mixin section_1{
+	display: flex;
+	margin: 20px 0px;
+	align-items: center;
+	justify-content: space-between;
+	time{
+		margin-right:10px;
+		font-size: 12px;
+		color: #999;
+	}
+	p{
+		color: #fff;
+		font-size:12px;
+		padding:4px 8px;
+		a{
+			display: block;
+		}
+	}
+}
+
+
+
+// デザイン①
+
+#design_1{
+	margin: 0 10%;
+	display: flex;
+	width: 80%;
+	background-color:#999;
+	background-color:#fff;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	// flex-direction: column;
+
+}
+#post_1{
+	margin: 2%;
+	padding:2%;
+	flex-basis:29%;
+	height:auto;
+	background-color:#fff;
+	overflow: hidden;
+	&:hover{
+		transition: all 0.2s;
+		box-shadow: 0px 6px 20px rgba(225,225,225,0.7);
+	}
+	&:hover img{
+		transform: scale(1.2);
+		overflow: hidden;
+	}
+	figure{
+		overflow: hidden;
+		height: 200px;
+	}
+
+	img{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		transition: 0.2s;
+	}
+}
+#post_title_1{
+	width: 100%;
+	font-weight: 600;
+	font-size: 14px;
+    line-height: 1.4;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    a{
+    	display: block;
+    }
+}
+
+
+#section_1_1{
+	@include section_1;
+	p{
+		background-color:$color_10;
+	}
+	a{
+		color:#fff;
+	}
+}
+#section_1_2{
+	@include section_1;
+	p{
+		border-bottom: 2px solid $color_7;
+	}
+}
+#section_1_3{
+	@include section_1;
+	p{
+		border-left: 4px solid $color_12;
+	}
+}
+#section_1_4{
+	@include section_1;
+	p{
+		background-color:$color_6;
+	}
+	a{
+		color:#fff;
+	}
+}
+#section_1_5{
+	@include section_1;
+	p{
+		border-bottom: 2px solid $color_2;
+	}
+}
+#section_1_6{
+	@include section_1;
+	p{
+		border-left: 4px solid $color_9;
+	}
+}
+
+// デザイン②
+
+
+#design_2{
+	margin: 0 10%;
+	display: flex;
+	width: 80%;
+	background-color:#999;
+	background-color:#fff;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+#post_2{
+	margin: 2%;
+	flex-basis:29%;
+	height:auto;
+	background-color:#fff;
+	overflow: hidden;
+	&:hover  #section_2_1{
+		transition: all 0.2s;
+		box-shadow: 0px 6px 20px rgba(225,225,225,0.7);
+	}
+
+	&:hover img{
+		transform: scale(1.2);
+		overflow: hidden;
+	}
+	figure{
+		overflow: hidden;
+		height: 200px;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		transition: 0.2s;
+	}
+}
+
+#section_2_1{
+	width:90%;
+	margin:0px auto 20px;
+	padding:auto;
+	position:relative;
+	z-index: 1;
+	&:hover{
+		// transition: all 0.2s;
+		// box-shadow: 0px 6px 20px rgba(225,225,225,0.7);
+	}
+
+}
+
+#title_area{
+	position:absolute;
+	bottom:8px;
+	right: 0px;
+	left:0px;
+	z-index: 10;
+	background-color:#fff;
+	position:relative;
+	text-align: center;
+	span{
+		position:absolute;
+		top:-8px;
+		right: 0px;
+		left: 0px;
+		// padding:4px 8px;
+		a{
+			background-color:$color_5;
+			padding:4px 8px;
+			opacity: 0.7;
+			color:#fff;
+		}
+	}
+}
+
+#post_title_2{
+	padding:8%;
+	a{
+		display: block;
+	}
+	h2{
+		font-weight: 600;
+		font-size: 14px;
+    	line-height: 1.4;
+    	margin-bottom:8px;
+	}
+	h3{ 
+		font-size:12px;
+		line-height: 1.4;
+		margin-bottom: 8px;
+		a{
+			color:#6E6E6E;
+		}
+	}
+	time{
+		color:#999;
+		font-size:12px;
+		line-height: 1.4;
+
+	}
+
+}
+
+

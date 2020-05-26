@@ -1,0 +1,78 @@
+// 色画像左から1-12
+$color_1:#e60012;
+$color_2:#f39800;
+$color_3:#fff100;
+$color_4:#8fc31f;
+$color_5:#009944;
+$color_6:#009e96;
+$color_7:#00a0e9;
+$color_8:#0068b7;
+$color_9:#1d2088;
+$color_10:#920783;
+$color_11:#e4007f;
+$color_12:#e5004f;
+
+
+#colors{
+	width:100%;
+	margin: 40px auto;
+}
+
+.design_block{
+
+	margin: 40px 0px;
+}
+
+.design_number{
+	font-size:24px;
+	margin: 12px;
+	font-weight: 400;
+}
+
+
+// デザイン①
+
+#design_1{
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+#header_1{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+
+	border:#000 solid 1px;
+	height: 100px;
+}
+
+
+#logo_area{
+	flex-basis: 16%;
+	border:#000 solid 1px;
+	height: 90px;
+	img{
+		width: 100%;
+		height: auto;
+		padding:20px 0px;
+	 }
+}
+#navi_area{
+	border:#000 solid 1px;
+	height: 90px;
+	flex-basis:56%;
+	display: flex;
+	justify-content: center;
+}
+#btn_area{
+	border:#000 solid 1px;
+	height: 90px;
+	flex-basis:24%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}

@@ -1,0 +1,48 @@
+#colors {
+  width: 100%;
+  margin: 40px auto; }
+
+.design_block {
+  margin: 40px 0px; }
+
+.design_number {
+  font-size: 24px;
+  margin: 12px;
+  font-weight: 400; }
+
+#design_1 {
+  display: flex;
+  justify-content: center; }
+
+#header_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: #000 solid 1px;
+  height: 100px; }
+
+#logo_area {
+  flex-basis: 16%;
+  border: #000 solid 1px;
+  height: 90px; }
+#logo_area img {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px; }
+
+#navi_area {
+  border: #000 solid 1px;
+  height: 90px;
+  flex-basis: 56%;
+  display: flex;
+  justify-content: center; }
+
+#btn_area {
+  border: #000 solid 1px;
+  height: 90px;
+  flex-basis: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */
